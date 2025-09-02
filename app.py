@@ -177,7 +177,7 @@ try:
     chart_4 = alt.Chart(team_goals).mark_bar().encode(
         x=alt.X('Team:N', sort='-y', title='Team'),
         y=alt.Y('Goals:Q', title='Number of Goals'),
-        color=alt.Color('Goals:Q', scale=alt.Scale(scheme='tealblues'), title='Goals'),
+        color=alt.Color('Goals:Q', scale=alt.Scale(scheme='turbo'), title='Goals'),
         tooltip=['Team', 'Goals']
     ).properties(width=600, height=400, title="Top 10 Teams by Goals")
 
@@ -208,7 +208,7 @@ try:
     chart_6 = alt.Chart(position).mark_bar().encode(
         x=alt.X("Position:N", sort="-y", title="Position"),
         y=alt.Y("Goals:Q", title="Number of Goals"),
-        color=alt.Color("Goals:Q", scale=alt.Scale(scheme="turbo"), title="Goals"),
+        color=alt.Color("Goals:Q", scale=alt.Scale(scheme="cividis"), title="Goals"),
         tooltip=["Position", "Goals"]
     ).properties(width=600, height=400, title="Top 10 Player by Dribbles")
 
